@@ -1,0 +1,24 @@
+=SINOPSIS
+Validates an attribute as a CLABE number.
+
+=REPOSITORY
+    git://github.com/edgarjs/validates-as-clabe.git
+
+=HOME
+    http://mimbles.net
+
+=USAGE
+As any other validation:
+
+    class User < ActiveRecord::Base
+      validates_as_clabe :bank_account # may have options like :on, :if and :message
+      validates_presence_of :name, :bank_account
+      #...
+    end
+
+= CREDITS
+* _Version_: 1.0.2
+* _Author_: Edgar J. Suarez Heredia - http://mimbles.net
+* _Feedback_: edgar.js@gmail.com
+* _License_: Rails' (MIT)
+* Base code written by {Sergio Jose Villaneda Avila}[http://vntech.blogspot.com].
